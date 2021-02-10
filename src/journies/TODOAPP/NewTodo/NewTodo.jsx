@@ -4,12 +4,21 @@ import {useState} from 'react';
 export const NewTodo = ({
 
 }) => {
-const [taskText, setTaskText] = useState();
+const [taskText, setTaskText] = useState(null);
 const [taskList, setTaskList] = useState([]);
+const [pageState, setPageState] = useState({inputError: false})
 
 const onAddTask = () => {
     const list = taskList;
-    setTaskList(list.concat({text: taskText, id: parseInt(Math.random()*100000)}));
+    if(taskText) {
+        if(pageState.inputError) {
+            setPageState({...pageState, inputError: false});    
+        }
+        setTaskList(list.concat({text: taskText, id: parseInt(Math.random()*100000)}));
+        setTaskText('');
+    }else {
+        setPageState({...pageState, inputError: true})
+    }
 }
 
 const deleteTask = (id) => {
@@ -21,7 +30,10 @@ return <div className="new-todo-main">
      <section className="new-todo-card">
          <article className="new-todo-card__title">Title</article>
          <article className="new-todo-card__input-container">
-             <input type="text" onChange={(e) => setTaskText(e.target.value)} className="new-todo-input"/>
+             {pageState.inputError && <span>Please enter</span>}
+             <input type="text" value={taskText} defaultValue={taskText} onChange={(e) => {
+                 setTaskText(e.target.value);
+            }} className="new-todo-input"/>
              <span className="new-todo-button-container">
                  <button className="new-todo-button" onClick={() => onAddTask()}>Add Task</button>
             </span>

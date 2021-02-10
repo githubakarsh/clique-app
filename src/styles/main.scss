@@ -1,8 +1,4 @@
-body {
-    background-color: white;
-    font-size: 20px;
-    font-family: "monaco", monospace;
-}
+
 
 // components
 @import './components/header';
@@ -14,3 +10,12 @@ body {
 
 // basic
 @import './basic/variables';
+
+
+body {
+    background-color: $background-color;
+    font-size: $default-fontSize;
+    font-family: $default-app-font;
+    letter-spacing: -1px;
+    padding: 0px;
+}

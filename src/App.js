@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
      <HeaderComponent />
-     <main>
+     <main className="main-container">
        App content
       <NewTodo />
      </main>

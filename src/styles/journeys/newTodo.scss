@@ -38,6 +38,8 @@
 }
 .todo-list {
     margin-top: 25px;
+    width: 50%;
+    margin-left: 14px;
     ul {
         list-style: none;
         padding-left: 20px;
@@ -45,12 +47,12 @@
         padding-bottom: 20px;
         padding-top: 25px;
         height: auto;
-        border-top: 4px solid red;
         box-shadow: 2px 7px 7px 1px lightgray;
+        border: 2px solid lightgray;
         li {
             border: 1px solid lightgray;
             padding: 10px;
-            margin: 10px;
+            margin: 25px;
         }
         
     }

@@ -11,7 +11,7 @@
 // basic
 @import './basic/variables';
 
-
+@import './app.scss';
 body {
     background-color: $background-color;
     font-size: $default-fontSize;

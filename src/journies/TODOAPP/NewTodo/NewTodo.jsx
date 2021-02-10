@@ -26,7 +26,7 @@ const deleteTask = (id) => {
     let filtered = list.filter(item => item.id !== id);
     setTaskList(filtered);
 }
-return <div className="new-todo-main">
+return <><div className="new-todo-main">
      <section className="new-todo-card">
          <article className="new-todo-card__title">Title</article>
          <article className="new-todo-card__input-container">
@@ -39,10 +39,13 @@ return <div className="new-todo-main">
             </span>
          </article>
     </section>
-    {taskList.length > 0 &&<section className="todo-list">
-    <ul>{taskList.map((item) => 
-            <li key={item.id}>{item.text} <span className="todo-task-icon"><i className="material-icons" onClick={() => deleteTask(item.id)}>close</i></span></li>
-        )}</ul>
-    </section>}
-     </div>;
+    
+     </div>
+     {taskList.length > 0 &&<section className="todo-list">
+     <ul>{taskList.map((item) => 
+             <li key={item.id}>{item.text} <span className="todo-task-icon"><i className="material-icons" onClick={() => deleteTask(item.id)}>close</i></span></li>
+         )}</ul>
+     </section>}
+     </>
+     ;
 }

@@ -1,0 +1,62 @@
+@import '../basic/variables';
+
+.new-todo-main {
+    width: 50%;
+    border: 1px solid lightgray;
+    border-top: 4px solid red;
+    padding: 20px;
+    @media screen and (max-width: 768px){
+        width: 80%;
+    }
+}
+.new-todo-card {
+    display: flex;
+    flex-direction: column;
+    &__title {
+        color: $default-title-color;
+    }
+    &__input-container {
+        margin: 10px;
+    }
+}
+.new-todo-input {
+    width: 400px;
+    height: 30px;
+    border-radius: 4px;
+}
+.new-todo-button {
+    height: 32px;
+    padding: 10px 26px 26px 26px;
+    width: auto;
+    background: none;
+    background-color: $default-title-color;
+    color: white;
+    border-radius: 4px;
+}
+.new-todo-button-container {
+    margin: 10px;
+}
+.todo-list {
+    margin-top: 25px;
+    ul {
+        list-style: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 25px;
+        height: auto;
+        border-top: 4px solid red;
+        box-shadow: 2px 7px 7px 1px lightgray;
+        li {
+            border: 1px solid lightgray;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+    }
+}
+.todo-task-icon {
+    float: right;
+    padding-top: 3px;
+}
+

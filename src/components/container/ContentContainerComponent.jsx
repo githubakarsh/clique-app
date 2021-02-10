@@ -5,10 +5,10 @@ export const ContentContainerComponent = ({
 }) => {
     return (<div className="content-container-main">
         <section className="content-container-title">
-            <h2>title {title}</h2>
+            <h2>{title}</h2>
         </section>
         <section className="content-container-body">
-            body {children}
+         {children}
         </section>
     </div>)
 }

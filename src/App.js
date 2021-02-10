@@ -9,7 +9,6 @@ function App() {
     <div className="App">
      <HeaderComponent />
      <main className="main-container">
-       App content
       <NewTodo />
      </main>
     </div>

@@ -5,6 +5,7 @@
     border: 1px solid lightgray;
     border-top: 4px solid red;
     padding: 20px;
+    margin-top: 15px;
     @media screen and (max-width: 768px){
         width: 80%;
     }
@@ -14,6 +15,7 @@
     flex-direction: column;
     &__title {
         color: $default-title-color;
+        font-weight: 700;
     }
     &__input-container {
         margin: 10px;
@@ -23,6 +25,10 @@
     width: 400px;
     height: 30px;
     border-radius: 4px;
+    padding-left: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 20px;
 }
 .new-todo-button {
     height: 32px;
@@ -54,7 +60,6 @@
             padding: 10px;
             margin: 25px;
         }
-        
     }
 }
 .todo-task-icon {

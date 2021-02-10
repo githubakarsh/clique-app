@@ -28,7 +28,7 @@ const deleteTask = (id) => {
 }
 return <><div className="new-todo-main">
      <section className="new-todo-card">
-         <article className="new-todo-card__title">Title</article>
+         <article className="new-todo-card__title"><emp>To Do</emp></article>
          <article className="new-todo-card__input-container">
              {pageState.inputError && <span>Please enter</span>}
              <input type="text" value={taskText} defaultValue={taskText} onChange={(e) => {

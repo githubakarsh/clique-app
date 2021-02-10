@@ -12,6 +12,6 @@ export const HeaderComponent = ({
                 <li>link 3</li>
             </ul>
         </section>
-        <section className="header-right-items"> logout / sign up</section>
+        <section className="header-right-items"> <a className="anchor-main" href="#">Login</a></section>
     </div>
 }

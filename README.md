@@ -5,7 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
-### `npx cypress open`
+### `npm run cypress:open`
+
+This will run the cypress tests for the files
 
 
 ### `npm start`

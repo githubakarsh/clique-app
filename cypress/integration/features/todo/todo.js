@@ -32,7 +32,7 @@ When('close icon is clicked', () => {
 });
 
 Then('{string} should be deleted', (string) => {
-
+    cy.get('ul>li').should('not.have', string);
 });
 
 When('button clicked on empy value', () => {

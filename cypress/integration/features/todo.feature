@@ -15,13 +15,13 @@ Scenario: the value of input must be empty
 When i add a new item
 Then input value must be empty
 
+Scenario: display error message, when button is clicked with out input value
+When button clicked on empy value
+Then should displayed 'Please enter task'
 
 Scenario: When Close icon is clicked
 When close icon is clicked
 Then 'Learn Cypress' should be deleted
 
-Scenario: display error message, when button is clicked with out input value
-When button clicked on empy value
-Then should displayed 'Please enter task'
 
 

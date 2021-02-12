@@ -10,6 +10,7 @@
     position: -webkit-sticky;
     top: 0;
     margin-bottom: 15px;
+    background-color: white;
     @media screen and (max-width : 768px) {
         position: unset;
         flex-direction: column;

@@ -1,0 +1,73 @@
+.sm-header {
+    height: 60px;
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.sm-main {
+    padding: 20px;
+    @media screen and (max-width: 768px) {
+        padding: 8px;
+    }
+}
+
+.sm-profile-status-container {
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    @media  screen and (max-width: 768px)  {
+       padding: 18px;
+       flex-direction: column;     
+    }
+}
+
+.sm-profile-container {
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 30%;
+    margin-right: 20px;
+    @media screen and (max-width: 768px) {
+        width: auto;
+        margin-right: 0px;
+    }
+}
+
+.sm-status-container {
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    width: 60%;
+    @media screen and (max-width: 768px) {
+        width: auto;
+        margin-top: 10px;
+    }
+}
+.dotted-divider {
+    border-bottom: 6px dotted black;
+}
+
+.sm-post {
+    padding: 12px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 15px;
+    width: 50%;
+    @media screen and (max-width: 768px) {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 0px;
+        width: auto;
+    }
+}

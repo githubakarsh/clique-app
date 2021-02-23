@@ -5,10 +5,12 @@ import { ContentContainerComponent } from './components/container/ContentContain
 import { NewTodo } from './journies/TODOAPP/NewTodo/NewTodo';
 import { SMPage } from './journies/Instagram/SMPage';
 
+import JournalLogin from './journies/journal/JournalLogin';
+
 function App() {
   return (
     <div className="App">
-      <SMPage />
+      <JournalLogin />
     </div>
   );
 }

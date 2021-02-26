@@ -9,6 +9,15 @@ const JournalLogin = ({ otpNumber }) => {
         const isValid = regexChecker('phoneNumber', value);
         (value.length <= 10 && isValid) && setPageState({...pageState, phoneNumber: value})
     }
+
+    const emailChange = (value) => {
+        const isValid = regexChecker('email', value);
+        isValid && setPageState({...pageState, emailAddress: value});
+    }
+    const passwordChange = (value) => {
+        const isValid = regexChecker('password', value);
+        isValid && setPageState({...pageState, password: value});
+    }
   return (
     <div className="journal-login">
         <div className="journal-container">

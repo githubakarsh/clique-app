@@ -5,6 +5,7 @@
 @import './components/anchor.scss';
 @import './components/contentContainer.scss';
 @import './components/alerts.scss';
+@import './components/react-toggle.scss';
 
 // journies
 @import './journeys/newTodo.scss';
@@ -16,6 +17,10 @@
 @import './basic/right-to-left';
 
 @import './app.scss';
+
+
+@import "~bootstrap/scss/bootstrap";
+
 body {
     background-color: $background-color;
     font-size: $default-fontSize;
@@ -23,3 +28,4 @@ body {
     padding: 0px;
     margin: 0;
 }
+

@@ -18,6 +18,9 @@
 .global-flex {
     display: flex;
     flex-direction: row;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 .show-elem {
     display: inline;
@@ -26,3 +29,13 @@
 .hide-elem {
     display: none;
 }
+
+.spending-form-container {
+    width: 60%;
+    @media screen and (max-width : 768px) {
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+}
+

@@ -39,20 +39,22 @@ const Spendings = ({}) => {
 
   const spendingList = () => {
 
-      return <ListGroup>
-          {pageState.spendList && pageState.spendList.map(list => {
+//      if(pageState.spendList) { 
+        return<ListGroup>
+           {/* {pageState.spendList && pageState.spendList.map(list => {
               return <ListGroup.Item id={list.id}>{list.text}</ListGroup.Item> 
-          })}
+          })} */}
       
       <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
       <ListGroup.Item>Morbi leo risus</ListGroup.Item>
       <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
       <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-    </ListGroup>
+    </ListGroup> 
+ //   }
   }
 
   const pageHeaderContent = () => {
-      return <Jumbotron style={{ textAlign: "center" }}>
+      return <Jumbotron style={{textAlign: 'center'}}>
       <h3>Your Spendings</h3>
       <p>Manage and Track down your Spendings</p>
     </Jumbotron>
@@ -62,15 +64,13 @@ const Spendings = ({}) => {
     <div >
       {pageHeaderContent()}
       {!pageState.index && AddSpendingButton()}
-      <SpendingFormComponent saveSpending={saveSpending} index={pageState.index} manageButtons={manageButtons}/>
-      <div >
-        <section className="global-flex">
-          <article>
-          </article>
-          <article>
+      <div className="spending-container">
+          <div className="spending-form">
+            form 
+          </div>
+          <div className="spending-list">
             {spendingList()}
-          </article>
-        </section>
+          </div>
       </div>
     </div>
   );

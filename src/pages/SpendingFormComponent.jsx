@@ -24,7 +24,8 @@ const SpendingFormComponent = ({ saveSpending, index, manageButtons }) => {
       ),
       3: (
         <Form.Group controlId="formGridSpendDate">
-          <Calendar className="global-padder" />
+          <Form.Label>Spending date</Form.Label>
+          <Form.Control size="sm" type="text" placeholder="" />
         </Form.Group>
       ),
       4: (
@@ -40,13 +41,13 @@ const SpendingFormComponent = ({ saveSpending, index, manageButtons }) => {
     }[index]);
 
   return (
-    <div>
+    <div className="spending-form-container">
       <Card className="global-padder">
         <div className="global-flex" style={{textAlign: 'center'}}>
             <div>{displayElements(index)}</div> 
            {(index > 0 && index < 4) && <div className="global-marginer"><Button onClick={() => manageButtons('next')}>Next</Button></div>}
             {(index > 0 && index <= 4) && <div className="global-marginer"><Button onClick={() => manageButtons('back')}>Back</Button></div>}         
-        </div>
+        </div> 
       </Card>
     </div>
   );

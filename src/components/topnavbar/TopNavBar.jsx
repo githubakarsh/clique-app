@@ -1,3 +1,6 @@
+import MenuNavigation from "./MenuNavigation";
+
+
 const TopNavBar = ({
     content
 }) => {
@@ -5,13 +8,10 @@ const TopNavBar = ({
         <div className="navigation-logo">
             Clique
         </div>
-        <div className="search-bar">
-            <input type="text" placeholder="Search ..."/>
-        </div>
-        <ul className="menu-list">
+        <div style={{marginLeft: '1179px'}}><ul className="menu-list">
             <li>Login / Logout </li>
             <li>Signup  </li>
-        </ul>
+        </ul></div>
     </nav>
 }
 

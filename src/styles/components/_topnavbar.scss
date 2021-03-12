@@ -1,14 +1,14 @@
 .navigation-main {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
-    flex-wrap: initial;
+    flex-wrap: wrap;
     height: 70px;
-    margin-bottom: 30px;
+    padding-top: 15px;
+    
 }
 
 .navigation-logo {
     font-size: 35px;
-    margin-left: 36px;
-    padding-top: 10px;
+    margin-left: 133px;
     font-family: 'Brush Script MT', cursive;
 }

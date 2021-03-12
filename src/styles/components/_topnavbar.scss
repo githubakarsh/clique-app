@@ -2,14 +2,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: initial;
+    height: 70px;
+    margin-bottom: 30px;
 }
 
 .navigation-logo {
-    margin-right: 10x;
-}
-
-
-.navigation-menu {
-    padding: 0;
-    margin: 0;
+    font-size: 35px;
+    margin-left: 36px;
+    padding-top: 10px;
+    font-family: 'Brush Script MT', cursive;
 }

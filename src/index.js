@@ -2,10 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './styles/main.scss';
 // third party css //
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'react-calendar/dist/Calendar.css';
-import "react-toggle/style.css"
 
 ReactDOM.render(
   <React.StrictMode>

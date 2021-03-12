@@ -1,14 +1,22 @@
-import './styles/main.scss';
-import NavBarComponent from './components/header/NavBarComponent';
-import Spendings from './pages/Spending';
-import { Card } from "react-bootstrap";
-import LoginPage from './designs/LoginPage';
+
+import { useEffect, useState } from "react";
+import TopNavBar from './components/topnavbar/TopNavBar';
 
 
 function App() {
+  const [appContent, setAppContent] = useState({});
+
+useEffect(() => {
+  fetch(`${process.env.PUBLIC_URL}/content/app-content.json`)
+  .then((r) => r.json())
+  .then((data) =>{ 
+    setAppContent(JSON.stringify(data));
+  })
+})
+
   return (
     <div>
-      <main ><LoginPage /></main>
+      <TopNavBar />
     </div>
   );
 }

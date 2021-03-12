@@ -1,0 +1,13 @@
+{
+    "navigationBar" : {
+            "home" : "Home",
+            "aboutUs" : "About Us",
+            "contactUs" : "Contact Us",
+            "login" : "Login",
+            "logout" : "Logout",
+            "newBooking" : "New Booking",
+            "inProgress" : "In Progress",
+            "closed" : "Closed",
+            "cancelled": "Cancelled"
+        }
+}

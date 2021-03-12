@@ -1,10 +1,23 @@
+
+import { PathConstants }  from "../../router/AppRouterConstants";
+import {useHistory } from "react-router-dom";
+const options = [
+    {name: 'Home', path: PathConstants.DEFAULT},
+    {name: 'New Bookings', path: PathConstants.NEW_BOOKINGS},
+    {name: 'In Progress', path: PathConstants.IN_PROGRESS},
+    {name: 'Cancelled', path: PathConstants.CANCELLED},
+    {name: 'Cameras and Others', path: PathConstants.CAMERAS_OTHERS},
+]
+
 const MenuNavigation = () => {
+    const history = useHistory();
+    const optionClick = (path) => {
+        history.push(path);
+    }
     return <nav className="menu-navigation"><ul className="menu-list">
-    <li>Home </li>
-    <li>New Bookings</li>
-    <li>In Progress</li>
-    <li>Cancelled</li>
-    <li>Cameras and others</li>
+        {options.map(listItem  => {
+            return <li onClick={() => optionClick(listItem.path)}>{listItem.name}</li>
+        })}
 </ul></nav>
 }
 

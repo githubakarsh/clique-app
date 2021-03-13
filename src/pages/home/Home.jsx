@@ -1,6 +1,10 @@
+import Title from "../../components/title/Title";
+
+
+
 const Home = () => {
     return <>
-        Home
+        <Title>Home</Title>
     </>
 }
 

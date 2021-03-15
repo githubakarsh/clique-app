@@ -1,9 +1,9 @@
 export const PathConstants = {
     DEFAULT: '/',
     NEW_BOOKINGS: '/new-bookings',
-    IN_PROGRESS: '/in-progress',
-    CANCELLED: '/cancelled',
-    CAMERAS_OTHERS: '/cameras-and-others',
+    INVESTMENTS: '/investments',
+    CREDITCARD: '/credit-card',
+    BANKING: '/banking',
     LOGIN: '/login',
     SIGNUP: '/signup',
 }

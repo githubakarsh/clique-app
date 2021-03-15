@@ -4,9 +4,9 @@ import {useHistory } from "react-router-dom";
 const options = [
     {name: 'Home', path: PathConstants.DEFAULT},
     {name: 'New Bookings', path: PathConstants.NEW_BOOKINGS},
-    {name: 'In Progress', path: PathConstants.IN_PROGRESS},
-    {name: 'Cancelled', path: PathConstants.CANCELLED},
-    {name: 'Cameras and Others', path: PathConstants.CAMERAS_OTHERS},
+    {name: 'Investments', path: PathConstants.INVESTMENTS},
+    {name: 'Credit Card', path: PathConstants.CREDITCARD},
+    {name: 'Banking', path: PathConstants.BANKING},
 ]
 
 const MenuNavigation = () => {

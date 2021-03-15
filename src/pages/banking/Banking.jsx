@@ -1,9 +1,8 @@
 import Title from "../../components/title/Title";
-
-const Home = () => {
+const Banking = () => {
     return <>
-        <Title>Home</Title>
+    <Title>Banking</Title>
     </>
 }
 
-export default Home;
+export default Banking;

@@ -4,14 +4,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './styles/main.scss';
 import { BrowserRouter as Router} from "react-router-dom";
+import HelmetComponent from './components/helmet/HelmetComponent';
+import AppContextProvider from './context/AppContextProvider';
+
 // third party css //
-
-
-
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-    <App />
+      <AppContextProvider>
+     <HelmetComponent title="Clique app"/>
+     <App />
+    </AppContextProvider>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

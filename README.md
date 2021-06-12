@@ -42,3 +42,26 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+Coding standards : 
+| use naming conventions |
+| use capitalized named constants |
+| Explanatory variables |
+| use default arguments |
+| Function names should say what to do |
+| Use only one level of abstraction |
+| Avoid using flags as in function parameters |
+| Avoid side effects, as much as possible |
+| use Spread and Rest OPerator |
+| Avoid global functions |
+| Use functional programming |
+| Encapsulate conditions |
+| Avoid negative conditionals |
+| use object literals in place of switch |
+| Avoid type checking |
+| Apply accesibility |
+| use promises over callback |
+| Asyn/Awai are more good than Promises | 
+| use 'fetch' with 'Async/Await' |
+| Good comments or documentation |
+
